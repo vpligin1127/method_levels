@@ -2,31 +2,31 @@ package solution;
 
 public  class CarHacker {
 
-    public Car1 car1 = new Car1();
-    public Car2 car2 = new Car2();
+    //public Car1 car1 = new Car1();
+    //public Car2 car2 = new Car2();
 
     // BEGIN (write your solution here)
-    public void mixer(){
+    public static void mixer(){
 
-        String tmpBrand = car1.getBrand();
-        Car1.setBrand(Car2.getBrand(car2));
-        car2.setBrand(tmpBrand);
+        String tmpBrand = Car1.getBrand();
+        Car1.setBrand(Car2.getBrand());
+        Car2.setBrand(tmpBrand);
 
-        Integer tmpMaxSpeed = Car1.getMaxSpeed();
-        car1.setMaxSpeed(car2.getMaxSpeed());
-        car2.setMaxSpeed(tmpMaxSpeed);
+        int tmpMaxSpeed = Car1.getMaxSpeed();
+        Car1.setMaxSpeed(Car2.getMaxSpeed());
+        Car2.setMaxSpeed(tmpMaxSpeed);
 
-        Integer tmpMinSpeed = Car1.getMinSpeed();
-        car1.setMinSpeed(car2.getMinSpeed());
-        car2.setMinSpeed(tmpMinSpeed);
+        int tmpMinSpeed = Car1.getMinSpeed();
+        Car1.setMinSpeed(Car2.getMinSpeed());
+        Car2.setMinSpeed(tmpMinSpeed);
 
-        Integer tmpEngineNumber = Car1.getEngineNumber();
-        car1.setEngineNumber(car2.getEngineNumber());
-        car2.setEngineNumber(tmpEngineNumber);
+        int tmpEngineNumber = Car1.getEngineNumber();
+        Car1.setEngineNumber(Car2.getEngineNumber());
+        Car2.setEngineNumber(tmpEngineNumber);
 
         String tmpDriverName = Car1.getDriverName();
-        car1.setDriverName(Car2.getDriverName(car2));
-        Car2.setDriverName(car2, tmpDriverName);
+        Car1.setDriverName(Car2.getDriverName());
+        Car2.setDriverName(tmpDriverName);
 
 
 
