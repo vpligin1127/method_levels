@@ -5,7 +5,7 @@ import solution.*;
         public class Main {
 
             public static void main(String[] args) {
-                CarHacker carHacker = new CarHacker();
+                //CarHacker carHacker = new CarHacker();
                 Car1 car1 = new Car1();
                 Car2 car2 = new Car2();
 
@@ -15,7 +15,7 @@ import solution.*;
                 String temp1 = car1.toString();
                 String temp2 = car2.toString();
 
-                carHacker.mixer();
+                CarHacker.INSTANCE.mixer();
 
                 if (!temp1.equals(car2.toString()) || !temp2.equals(car1.toString()))
                     throw new RuntimeException("\n ###Errors in the transfer of fields (variables). Verify that the variables are received and assigned correctly.\n###");

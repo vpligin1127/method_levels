@@ -2,11 +2,13 @@ package solution;
 
 public  class CarHacker {
 
-    //public Car1 car1 = new Car1();
-    //public Car2 car2 = new Car2();
-
     // BEGIN (write your solution here)
-    public static void mixer(){
+    private CarHacker(){}
+
+    public static final CarHacker INSTANCE = new CarHacker();
+
+
+    public void mixer(){
 
         String tmpBrand = Car1.getBrand();
         Car1.setBrand(Car2.getBrand());
