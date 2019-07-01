@@ -6,50 +6,50 @@ public class Car2 {
 
     private static final Random r = new Random();
 
-    private  String brand = "Korch";
-    private  Integer maxSpeed = 80;
-    private  Integer minSpeed = 0;
-    private  Integer engineNumber = r.nextInt();
-    private  String driverName = "mrSpeedy";
+    private static String brand = "Korch";
+    private static int maxSpeed = 80;
+    private static int minSpeed = 0;
+    private static int engineNumber = r.nextInt();
+    private static String driverName = "mrSpeedy";
 
-    static String getBrand(Car2 car2) {
-        return car2.brand;
+    static String getBrand() {
+        return brand;
     }
 
-    Integer getMaxSpeed() {
+    static int getMaxSpeed() {
         return maxSpeed;
     }
 
-    Integer getMinSpeed() {
+    static int getMinSpeed() {
         return minSpeed;
     }
 
-    Integer getEngineNumber() {
+    static int getEngineNumber() {
         return engineNumber;
     }
 
-    static String getDriverName(Car2 car2) {
-        return car2.driverName;
+    static String getDriverName() {
+        return driverName;
     }
 
-    void setBrand(String brand) {
-        this.brand = brand;
+    static void setBrand(String brand) {
+        Car2.brand = brand;
     }
 
-    void setMaxSpeed(Integer maxSpeed) {
-        this.maxSpeed = maxSpeed;
+    static void setMaxSpeed(int maxSpeed) {
+        Car2.maxSpeed = maxSpeed;
     }
 
-    void setMinSpeed(Integer minSpeed) {
-        this.minSpeed = minSpeed;
+    static void setMinSpeed(int minSpeed) {
+        Car2.minSpeed = minSpeed;
     }
 
-    void setEngineNumber(Integer engineNumber) {
-        this.engineNumber = engineNumber;
+    static void setEngineNumber(int engineNumber) {
+        Car2.engineNumber = engineNumber;
     }
 
-    static void setDriverName(Car2 car2, String driverName) {
-        car2.driverName = driverName;
+    static void setDriverName(String driverName) {
+        Car2.driverName = driverName;
     }
 
     @Override

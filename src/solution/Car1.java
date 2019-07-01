@@ -6,24 +6,24 @@ public class Car1 {
     private static final Random r = new Random();
 
     private  static String brand = "Car1";
-    private  static Integer maxSpeed = 380;
-    private  static Integer minSpeed = 0;
-    private  static Integer engineNumber = r.nextInt();
+    private  static int maxSpeed = 380;
+    private  static int minSpeed = 0;
+    private  static int engineNumber = r.nextInt();
     private  static String driverName = "Trololoshkin";
 
-    String getBrand() {
+    static String getBrand() {
         return brand;
     }
 
-    static Integer getMaxSpeed() {
+    static int getMaxSpeed() {
         return maxSpeed;
     }
 
-    static Integer getMinSpeed() {
+    static int getMinSpeed() {
         return minSpeed;
     }
 
-    static Integer getEngineNumber() {
+    static int getEngineNumber() {
         return engineNumber;
     }
 
@@ -35,21 +35,22 @@ public class Car1 {
         Car1.brand = brand;
     }
 
-    void setMaxSpeed(Integer maxSpeed) {
+    static void setMaxSpeed(int maxSpeed) {
         Car1.maxSpeed = maxSpeed;
     }
 
-    void setMinSpeed(Integer minSpeed) {
+    static void setMinSpeed(int minSpeed) {
         Car1.minSpeed = minSpeed;
     }
 
-    void setEngineNumber(Integer engineNumber) {
+    static void setEngineNumber(int engineNumber) {
         Car1.engineNumber = engineNumber;
     }
 
-    void setDriverName(String driverName) {
+    static void setDriverName(String driverName) {
         Car1.driverName = driverName;
     }
+
 
     @Override
     public String toString() {
