@@ -1,10 +1,15 @@
 package solution;
 
-import java.util.Random;
+//import java.util.Random;
 
-public class Car2 {
-
+public class Car2 extends Car1{
+/*
     private static final Random r = new Random();
+    private String brand;
+    private int maxSpeed;
+    private int minSpeed;
+    private int engineNumber;
+    private String driverName;
 
     private static String brand = "Korch";
     private static int maxSpeed = 80;
@@ -12,44 +17,44 @@ public class Car2 {
     private static int engineNumber = r.nextInt();
     private static String driverName = "mrSpeedy";
 
-    static String getBrand() {
+    String getBrand() {
         return brand;
     }
 
-    static int getMaxSpeed() {
+    int getMaxSpeed() {
         return maxSpeed;
     }
 
-    static int getMinSpeed() {
+    int getMinSpeed() {
         return minSpeed;
     }
 
-    static int getEngineNumber() {
+    int getEngineNumber() {
         return engineNumber;
     }
 
-    static String getDriverName() {
+    String getDriverName() {
         return driverName;
     }
 
-    static void setBrand(String brand) {
-        Car2.brand = brand;
+    void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    static void setMaxSpeed(int maxSpeed) {
-        Car2.maxSpeed = maxSpeed;
+    void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
     }
 
-    static void setMinSpeed(int minSpeed) {
-        Car2.minSpeed = minSpeed;
+    void setMinSpeed(int minSpeed) {
+        this.minSpeed = minSpeed;
     }
 
-    static void setEngineNumber(int engineNumber) {
-        Car2.engineNumber = engineNumber;
+    void setEngineNumber(int engineNumber) {
+        this.engineNumber = engineNumber;
     }
 
-    static void setDriverName(String driverName) {
-        Car2.driverName = driverName;
+    void setDriverName(String driverName) {
+        this.driverName = driverName;
     }
 
     @Override
@@ -61,4 +66,5 @@ public class Car2 {
                 engineNumber,
                 driverName);
     }
+    */
 }

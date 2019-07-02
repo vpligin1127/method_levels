@@ -1,13 +1,28 @@
 package beginer;
 
 import solution.*;
+import java.util.Random;
 
         public class Main {
 
             public static void main(String[] args) {
+                final Random r = new Random();
+
                 CarHacker carHacker = new CarHacker();
                 Car1 car1 = new Car1();
                 Car2 car2 = new Car2();
+
+                car1.setBrand("Volvo");
+                car1.setMaxSpeed(200);
+                car1.setMinSpeed(0);
+                car1.setEngineNumber(r.nextInt());
+                car1.setDriverName("Driver1");
+
+                car2.setBrand("BMW");
+                car2.setMaxSpeed(250);
+                car2.setMinSpeed(3);
+                car2.setEngineNumber(r.nextInt());
+                car2.setDriverName("Driver2");
 
                 printBefore(car1, car2);
 
@@ -15,10 +30,10 @@ import solution.*;
                 String temp1 = car1.toString();
                 String temp2 = car2.toString();
 
-                carHacker.mixer();
+                carHacker.mixer(car1, car2);
 
                 if (!temp1.equals(car2.toString()) || !temp2.equals(car1.toString()))
-                    throw new RuntimeException("\n ###Errors in the transfer of fields (variables). Verify that the variables are received and assigned correctly.\n###");
+                    throw new RuntimeException("\n ###Errors in transfer of fields (variables). Verify that the variables are received and assigned correctly.\n###");
 
 
                 printAfter(car1, car2);
