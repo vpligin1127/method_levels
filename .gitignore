@@ -1,0 +1,13 @@
+# Intellij
+*.ipr
+*.iws
+*.iml
+.idea/
+
+
+out/
+
+
+.history
+.cache
+.DS_Store

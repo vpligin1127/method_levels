@@ -3,61 +3,70 @@ package solution;
 import java.util.Random;
 
 public class Car1 {
-    private static final Random r = new Random();
 
-    private  static String brand = "Car1";
-    private  static Integer maxSpeed = 380;
-    private  static Integer minSpeed = 0;
-    private  static Integer engineNumber = r.nextInt();
-    private  static String driverName = "Trololoshkin";
+    private String brand;
+    private int maxSpeed;
+    private int minSpeed;
+    private int engineNumber;
+    private String driverName;
+
+    /*
+        private  static String brand = "Car1";
+        private  static int maxSpeed = 380;
+        private  static int minSpeed = 0;
+        private  static int engineNumber = r.nextInt();
+        private  static String driverName = "Trololoshkin";
+    */
 
     String getBrand() {
         return brand;
     }
 
-    static Integer getMaxSpeed() {
+    int getMaxSpeed() {
         return maxSpeed;
     }
 
-    static Integer getMinSpeed() {
+    int getMinSpeed() {
         return minSpeed;
     }
 
-    static Integer getEngineNumber() {
+    int getEngineNumber() {
         return engineNumber;
     }
 
-    static String getDriverName() {
+    String getDriverName() {
         return driverName;
     }
 
-    static  void setBrand(String brand) {
-        Car1.brand = brand;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    void setMaxSpeed(Integer maxSpeed) {
-        Car1.maxSpeed = maxSpeed;
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
     }
 
-    void setMinSpeed(Integer minSpeed) {
-        Car1.minSpeed = minSpeed;
+    public void setMinSpeed(int minSpeed) {
+        this.minSpeed = minSpeed;
     }
 
-    void setEngineNumber(Integer engineNumber) {
-        Car1.engineNumber = engineNumber;
+    public void setEngineNumber(int engineNumber) {
+        //final Random r = new Random();
+        //this.engineNumber = r.nextInt();
+        this.engineNumber = engineNumber;
     }
 
-    void setDriverName(String driverName) {
-        Car1.driverName = driverName;
+    public void setDriverName(String driverName) {
+        this.driverName = driverName;
     }
 
     @Override
     public String toString() {
         return String.format("{brand: %s, maxSpeed: %d, minSpeed: %d, engineNumber: %d, driverName: %s}",
-                brand,
-                maxSpeed,
-                minSpeed,
-                engineNumber,
-                driverName);
+                this.brand,
+                this.maxSpeed,
+                this.minSpeed,
+                this.engineNumber,
+                this.driverName);
     }
 }

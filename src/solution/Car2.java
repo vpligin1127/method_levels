@@ -1,55 +1,60 @@
 package solution;
 
-import java.util.Random;
+//import java.util.Random;
 
-public class Car2 {
-
+public class Car2 extends Car1{
+/*
     private static final Random r = new Random();
+    private String brand;
+    private int maxSpeed;
+    private int minSpeed;
+    private int engineNumber;
+    private String driverName;
 
-    private  String brand = "Korch";
-    private  Integer maxSpeed = 80;
-    private  Integer minSpeed = 0;
-    private  Integer engineNumber = r.nextInt();
-    private  String driverName = "mrSpeedy";
+    private static String brand = "Korch";
+    private static int maxSpeed = 80;
+    private static int minSpeed = 0;
+    private static int engineNumber = r.nextInt();
+    private static String driverName = "mrSpeedy";
 
-    static String getBrand(Car2 car2) {
-        return car2.brand;
+    String getBrand() {
+        return brand;
     }
 
-    Integer getMaxSpeed() {
+    int getMaxSpeed() {
         return maxSpeed;
     }
 
-    Integer getMinSpeed() {
+    int getMinSpeed() {
         return minSpeed;
     }
 
-    Integer getEngineNumber() {
+    int getEngineNumber() {
         return engineNumber;
     }
 
-    static String getDriverName(Car2 car2) {
-        return car2.driverName;
+    String getDriverName() {
+        return driverName;
     }
 
     void setBrand(String brand) {
         this.brand = brand;
     }
 
-    void setMaxSpeed(Integer maxSpeed) {
+    void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
 
-    void setMinSpeed(Integer minSpeed) {
+    void setMinSpeed(int minSpeed) {
         this.minSpeed = minSpeed;
     }
 
-    void setEngineNumber(Integer engineNumber) {
+    void setEngineNumber(int engineNumber) {
         this.engineNumber = engineNumber;
     }
 
-    static void setDriverName(Car2 car2, String driverName) {
-        car2.driverName = driverName;
+    void setDriverName(String driverName) {
+        this.driverName = driverName;
     }
 
     @Override
@@ -61,4 +66,5 @@ public class Car2 {
                 engineNumber,
                 driverName);
     }
+    */
 }
