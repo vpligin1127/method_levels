@@ -4,13 +4,7 @@
 *.iml
 .idea/
 
-# Eclipse
-.classpath
-.project
-.settings/
-
-# Maven
-target/
+out/
 
 .history
 .cache
